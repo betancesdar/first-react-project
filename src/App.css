@@ -21,22 +21,31 @@ p, h1 {
 }
 
 .card_quote {
-  margin-bottom: 200px;
-  
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card_author{
+  margin-left: auto;
+  width: max-content;
 }
 
 .card_btn{
+  display: block;
   color: white;
+  margin-top: 5px;
+  margin-left: auto;
   border: none;
   width: 30px;
-  aspect-ratio: 2;
+  aspect-ratio: 1;
   border-radius: 50%;
   cursor: pointer;
   transition: filter 100ms ease,transform 100ms ease;
 }
 
 .card_btn:hover{
-  filter: brightness(1.1);
+  filter: brightness(1.2);
   transform: scale(1.05);
   transition: filter 100ms ease,transform 100ms ease;
 }
