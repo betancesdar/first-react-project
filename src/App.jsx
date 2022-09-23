@@ -6,8 +6,6 @@ import QuoteBox from './components/QuoteBox'
 import color from './utils/colors'
 
 function App() {
- 
-
   const indexRandom = arr =>  parseInt(Math.random() * arr.length)
   const firstElemet = quotes[indexRandom(quotes)]
   const firstColor = color[indexRandom(color)]
@@ -18,6 +16,7 @@ function App() {
   const styleQuote = {
     backgroundColor: randomColor
   }
+
 
   const getRandomAll = () =>  {
     setrandomQuotes(quotes[indexRandom(quotes)])

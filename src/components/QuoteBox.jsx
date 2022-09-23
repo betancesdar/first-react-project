@@ -1,11 +1,12 @@
 import React from 'react'
+import Button from './Button'
 
 const QuoteBox = ({randomQuotes,randomColor,getRandomAll}) => {
-
+   
     const letterColor = {
         color: randomColor
     }
-
+    
     const backgroundColor = {
         backgroundColor: randomColor
     }
@@ -15,7 +16,7 @@ const QuoteBox = ({randomQuotes,randomColor,getRandomAll}) => {
     <article style={letterColor} className='card'>
         <p className='card_qoute'>{randomQuotes.quote}</p>
         <h1 className='card_author'>{randomQuotes.author}</h1>
-        <button onClick={getRandomAll} style={backgroundColor} className='card_btn'>Next</button>
+        <Button backgroundColor={backgroundColor} getRandomAll={getRandomAll}/>
     </article>
   )
 }
